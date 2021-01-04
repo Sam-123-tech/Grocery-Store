@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+         body{
+    background-color: palegreen;
+}
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(255, 132, 194);
+            font-family: 'Pacifico', cursive;
+        }
+        .navbar li a:hover{
+            color: darkblue;
+            background-color: darkorchid;
+        }
+        .navbar :hover{
+            background-color: rgb(54, 0, 105);
+            border-radius: 30px;
+        }
+        .search{
+            float: right;
+            color: wheat;
+            padding: 12px 75px;
+               }
+        .navbar input{
+            border: 6px solid rgb(107, 14, 14);
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        h1{
+            margin:12px auto;
+            width:400px;
+            font-family: 'Pacifico', cursive;
+            color: whitesmoke;
+            background-color: deeppink;
+        }
+        .FOOD{
+                  border:5px solid rgb(165, 0, 88);
+                  background-color:rgb(255, 170, 0);
+                  margin: 10px;
+                  padding: 8px;
+                  box-shadow: 8px 9px darkred, 14px 16px rgb(0, 146, 0) ;
+        }
+        #DF{
+              clear: both;
+               width: 45%;
+               color: rgb(170, 0, 255);
+               font-family: 'Pacifico', cursive;
+           }
+           #GH{
+           clear: both;
+            width: 45%;
+            color: rgb(0, 255, 242);
+            font-family: 'Pacifico', cursive;
+        }
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 5px solid chartreuse;
+            margin:2px;
+            display: flex;
+            font-family: 'Pacifico', cursive;
+        }
+        #box-1{ 
+           position: relative;
+           background-color: rgb(255, 0, 0);
+           font-family: 'Pacifico', cursive;
+           display: flex;
+           color: rgb(255, 253, 253);
+           box-shadow: 10px -13px 5px rgb(164, 119, 182), 20px -23px 10px rgb(223, 76, 125);
+        }   
+        #box-2{ 
+            position: relative;
+            color: black;
+           background-color: fuchsia; 
+           font-family: 'Pacifico', cursive;
+           box-shadow: 10px -13px 5px  rgb(2, 165, 83),  20px -23px 10px rgb(255, 0, 85);
+        }
+        #box:hover{
+        background-color: rgb(255, 0, 34);
+        height: 400px;
+        width: 400px;
+        border-radius: 100px;
+        font-size: 45px;
+    }
+        .container{
+            height: 455px;
+            width: 500px;
+         margin: auto;
+         border: 12px solid deepskyblue;
+         background-color: pink;
+background-image:url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=700&q=60');
+            background-size: 610px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .btn{
+            font-family:'Pacifico', cursive ;
+            font-weight: bold;
+            color: yellow;
+            background-color: cadetblue;
+            padding:6px;
+            border: none;
+            cursor:pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: sandybrown;
+            background-color: rgb(255, 0, 0);
+        }
+     #btn4{
+          float: right;
+      }
+      #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(2, 218, 2);
+        color: palegoldenrod;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out .3s;
+        font-family: 'Pacifico', cursive;
+    }
+    #box:hover{
+        background-color: rgb(255, 81, 0);;
+        height: 400px;
+        width: 400px;
+        border-radius: 100px;
+        font-size: 45px;
+    }
+    .con{
+            height: 455px;
+            width: 500px;
+         margin: auto;
+         border: 12px solid rgb(3, 3, 151);
+background-image:url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=700&q=60');
+            background-size: 610px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c{
+            height: 455px;
+            width: 500px;
+         margin: auto;
+         border: 12px solid rgb(52, 241, 226);
+background-image:url('https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fHBhc3RhfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60');
+            background-size: 610px;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: right;
+        }
+        .image{
+            height: 455px;
+            width: 500px;
+         margin: auto;
+         border: 12px solid rgb(145, 255, 0);
+         background-color: palevioletred;
+background-image:url('https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+            background-size: 390px;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+        }
+        .container2{
+            height: 80vh;
+            background-color:rgb(109, 163, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:rgb(255, 60, 0);
+            border: 10px solid thistle;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transition:all 1s ease-in-out;
+        }
+        .box3:hover{
+            transform: rotate(360deg);
+            background-color: deeppink;
+           /*transform: skew(40deg);
+           transform: translateX(120px);
+            transform: translateY(120px);
+            transform: translate(120px,120px);
+            transform:scale(2);*/
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">? Help</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search items">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h1>The FOOD We Eat :-</h1>
+        <div class="FOOD" id="DF">
+            <h2>Kinds of Food</h2>
+            <p class="para" id="DFpara">The two main sources of food are- plants and animals.
+             Most of the food we eat in towns is bought.
+             In the countryside people grow their own food.
+             There are different kinds of food.
+             Some are vegeterians while others are non-vegeterians.
+             Food is neccesary for living.
+             Without foo we are incomplete.
+            </p> 
+            </div>
+            <div class="FOOD" id="GH">
+                <h2>All Food</h2> 
+                <p class="para" id="GHpara"> Rice is a stample food of the Bagalis.
+                    We do not get all foods all year round.
+                    Fruits like- bananas, oranges, apples, grapes are all very healthy and tasty.
+                    Vegetables such as- beans, turnips, potatoes and many other vegetables are very nutritious.
+                    Fish, eggs and meat are very delicio and good for our health. 
+                </p>
+            </div>
+            <hr>
+<div class= container>Nobody can live without food and drink. 
+    Some food can be eaten raw.</div>
+    <hr>   
+<div class="box" id="box-1">The food habit is different in different places. 
+    It depends on what kind of food we get from the place we live in. 
+</div>
+<div class="box" id="box-2">We should always maintain a balanced diet to keep ourselves fit and healthy. 
+    It contains all nutrients and fibres.
+</div>
+<a href="!@#$%^&*()_+~" class="btn" id="btn4"> Want to Read More ?</a> 
+<div class="contain">
+<div id="box"> Food is one of the most important things in our life. 
+We should not waste it.  
+</div>
+</div> 
+<strong>
+    We should eat fruits  
+</strong>
+<em>
+    and vegetables regularly also.
+</em>
+<h1>THIS IS THE FORM TO JOIN OUR ORGANIGATION :-</h1>
+<form action="backend.php">
+    <div>
+        Name: <input type="text" name="myName">
+    </div>
+    <br>
+    <div>
+        Address: <input type="text" name="myAddress">
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myEmail">
+    </div>
+
+    <br>
+    <div>
+        Date of Birth: <input type="date" name="myDate">
+    </div>
+    <br>
+    <div>
+        Gender: Male <input type="checkbox" name="myGender"> Female <input type="checkbox" name="myGender">
+        Other <input type="checkbox" name="myGender">
+    </div>
+    <br>
+    <div>
+        Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+   City: <input type="City" name="myCity"> 
+   </div>
+   <br>
+   <div>
+  Profession: <input type="Profession" name="myProfession"> 
+  </div>
+   <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    <div class= con></div> 
+    <div class= c></div> 
+    <div class= image></div> 
+    <div class="container2">
+        <div class="box3">
+            Without food we cannot live.
+        </div>
+    </div>
+</body>  
+</html>              
